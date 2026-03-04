@@ -1,0 +1,165 @@
+/* === Global Styles === */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+}
+
+section {
+  scroll-margin-top: 80px; /* smooth scroll offset for navbar */
+}
+
+/* === Navbar === */
+.navbar {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.navbar-brand img {
+  margin-right: 8px;
+}
+.nav-link {
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: #ffc107 !important;
+}
+
+/* === Hero Carousel === */
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+.carousel-caption {
+  background: rgba(0,0,0,0.5);
+  padding: 15px;
+  border-radius: 8px;
+}
+.carousel-caption h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.carousel-caption p {
+  font-size: 1.2rem;
+}
+
+/* === About Section === */
+#about img {
+  max-height: 350px;
+  object-fit: cover;
+}
+#about ul {
+  list-style: none;
+  padding-left: 0;
+}
+#about ul li::before {
+  content: "✔ ";
+  color: #0d6efd;
+  font-weight: bold;
+}
+
+/* === Departments Section === */
+#departments .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#departments .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+#departments img {
+  height: 150px;
+  object-fit: cover;
+}
+
+/* === Students Section === */
+#students .card img {
+  height: 150px;
+  object-fit: cover;
+}
+#student-form input, #student-form textarea {
+  border-radius: 6px;
+}
+#student-form button {
+  border-radius: 6px;
+}
+
+/* === Notifications Section === */
+#notifications .list-group-item {
+  font-size: 1rem;
+}
+#notifications .badge {
+  font-size: 0.8rem;
+}
+
+/* === Events Section === */
+#events .card img {
+  height: 180px;
+  object-fit: cover;
+}
+#events .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#events .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* === Placements Section === */
+#placements img {
+  max-height: 120px;
+  object-fit: contain;
+}
+#placements .list-group-item {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* === Contact Section === */
+#contact form input, #contact form textarea {
+  border-radius: 6px;
+}
+#contact form button {
+  border-radius: 6px;
+}
+#contact i {
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+#contact i:hover {
+  color: #ffc107;
+}
+
+/* === Footer === */
+footer {
+  font-size: 0.9rem;
+}
+footer h5 {
+  font-weight: 600;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: #ffc107 !important;
+}
+footer i {
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+footer i:hover {
+  color: #ffc107;
+}
+
+/* === Responsive Tweaks === */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 300px;
+  }
+  .carousel-caption h1 {
+    font-size: 1.8rem;
+  }
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+}
